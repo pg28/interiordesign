@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap');
 
-*{
+body{
     background-color: #181719;
-    margin-left: 77px;
-    margin-top: 42px;
 }
 
 /* Contains entire display except footer */
@@ -12,7 +10,7 @@
 }
 
 .top-row{
-
+    padding: 77px;
 }
 
 .interior{
@@ -32,10 +30,13 @@
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    margin-right: 76px;
     color: #ffffff;
     text-transform: capitalize;
     font: 18px "Montserrat", normal;
+}
+
+.menu li{
+    padding-right: 86px;
 }
 
 .menu li:hover{
@@ -45,15 +46,15 @@
 }
 
 .container{
-    /* display: flex; */
+    display: flex;
     position: relative;
 }
 
-/* .text{
+.text{
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
-} */
+}
 
 .title{
     font: 48px "Lora", normal;
@@ -76,33 +77,28 @@
 }
 
 .test{
-    /* display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: flex-start; */
+ display: flex;
+ flex-flow: column nowrap;
 
 }
 
 .person{
-    width: 313px;
-    height: 155px;
     position: absolute;
-    bottom: 200px;
-    right: 700px;
+    bottom: 170px;
+    right: 150px;
+    width: 410px;
+    height: 189px;
 
 
 }
 
 .person-container{
-    width: 410px;
-    height: 189px;
-    /* background-color: #181719; */
-    box-shadow: 0px 0px;
+    box-shadow: 0px 4px 4px;
+    display: inline-block;
 }
-/* .text-info{
-    display: flex;
-    flex-flow: column wrap;
-} */
+.text-info{
+
+}
 
 .name{
     font: 14px "Montserrat", normal;
@@ -118,6 +114,7 @@
 .text-bubble{
     font: 24px "Lora", normal;
     color: #ffffff;
+    width: 287px;
 }
 
 #bg{
