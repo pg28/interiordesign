@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap');
+
+*{
+    background-color: #181719;
+    margin: 77px;
+}
+
+/* Contains entire display except footer */
+.main{
+
+}
+
+.top-row{
+
+}
+
+.interior{
+    font: 14px "Crimson Pro", normal;
+    text-transform: uppercase;
+    width: 102px;
+    height: 32px;
+    border-style: solid;
+    border-color: #ffffff;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-right: 76px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font: 18px "Montserrat", normal;
+}
+
+.menu li:hover{
+    text-decoration: underline;
+    font-weight: 700;
+    text-underline-offset: 8px;
+}
+
+.container{
+    display: flex;
+}
+
+.text{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+.title{
+    font: 48px "Lora", normal;
+    color: #ffffff;
+    width: 365px;
+    height: 61px;
+    padding-top: 381px;
+}
+
+.read-more{
+    font: 18px "Montserrat", normal 700;
+    color: #ffffff;
+}
+
+.description{
+    font: 24px "Montserrat", normal;
+    color: #ffffff;
+    width: 410px;
+    height: 145px;
+}
+
+.test{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.person{
+    width: 410px;
+    height: 189px;
+    display: flex;
+    /* flex-flow: column wrap; */
+    align-items: flex-start;
+    background-color: #181719;
+    box-shadow: 1px 0px;
+
+}
+.text-info{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.name{
+    font: 14px "Montserrat", normal;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.job{
+    font: 12px "Montserrat", normal;
+    color: #828282;
+}
+
+.text-bubble{
+    font: 24px "Lora", normal;
+    color: #ffffff;
+}
+
+#bg{
+    margin-top: 221px;
+    max-width: 737px;
+    max-height: 555px;
+}
+
+#headshot{
+    border-radius: 50%;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.footer{
+    font: 14px "Montserrat", normal;
+    color: #a9a9a9;
+    padding-top: 128px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+    *{
+        margin-left: 12px;
+    }
+}
