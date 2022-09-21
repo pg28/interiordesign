@@ -35,8 +35,10 @@ body{
     font: 18px "Montserrat", normal;
 }
 
-.menu li{
+.menu li a{
     padding-right: 86px;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .menu li:hover{
@@ -46,7 +48,8 @@ body{
 }
 
 .container{
-    display: inline;
+    padding-left: 76px;
+    display: flex;
     position: relative;
 }
 
@@ -54,6 +57,7 @@ body{
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
+    padding-right: 139px;
 }
 
 .title{
