@@ -39,6 +39,10 @@ body{
     font: 18px "Montserrat", normal;
 }
 
+.menu-button{
+    display: none;
+}
+
 .menu li a{
     padding-right: 86px;
     color: #ffffff;
@@ -151,5 +155,13 @@ body{
 @media only screen and (max-width: 600px){
     *{
         margin-left: 12px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
     }
 }
