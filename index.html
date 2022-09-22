@@ -13,7 +13,7 @@
       <div class="top-row">
         <p class="interior">this interior</p>
         <div class="menu-button">
-          <img src="menu.png" class="menu-img">
+          <img src="menu.png" id="menu-img" onclick="myFunction()">
         </div>
         <ul class="menu">
           <li><a href="#HOME">home</a></li>
@@ -47,11 +47,18 @@
       </div>
     </div>
     <footer class="footer">created by PG28 - devChallenges.io</footer>
-    <!-- <script>
-      const menuToggle = document.querySelector('menu.png')
-      menuToggle.addEventListener('click', () => {
-        menuToggle.document.
-      })
-    </script> -->
+    <script>
+      function myFunction(){
+        var menuButton = document.getElementById("menu-img");
+        
+        if(menuButton = "menu.png"){
+          document.getElementById("menu-img").src = "close.png";
+        }
+        else if(menuButton = "close.png"){
+          document.getElementById("menu-img").src = "menu.png";
+        }
+      }
+
+    </script>
   </body>
 </html>
