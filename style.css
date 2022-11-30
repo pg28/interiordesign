@@ -12,7 +12,8 @@ body{
 .top-row{
     padding-left: 77px;
     display: flex;
-    gap: 648px;
+    gap: 300px;
+    align-items: flex-end;
 }
 
 
@@ -39,9 +40,6 @@ body{
     font: 18px "Montserrat", normal;
 }
 
-.menu-button{
-    display: none;
-}
 
 .menu li a{
     padding-right: 86px;
@@ -100,7 +98,7 @@ body{
 .person{
     position: absolute;
     bottom: -125px;
-    right: 550px;
+    right: 250px;
     width: 410px;
     height: 189px;
     background-color: #181719;
@@ -154,9 +152,7 @@ body{
 
 
 
-#menu-imgClose{
-    background-image: url(close.png);
-}
+
 
 @media only screen and (max-width: 600px){
     *{
@@ -164,10 +160,39 @@ body{
     }
 
     .menu{
-        display: none;
+        /* display: none; */
     }
 
-    .menu-button{
-        display: block;
+    .menuActive{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .menu li{
+        padding-bottom: 32px;
+    }
+
+    .top, .middle, .bottom{
+        display: inline-block;
+        width: 35px;
+        height: 3px;
+        background-color: black;
+        margin: 0px, 0;
+        transition: 0.4s;
+    }
+
+    .change .top{
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+    .change .middle{
+        opacity: 0;
+    }
+    .change .bottom{
+        transform: translate(0, -25px) rotate(45deg);
+    }
+
+    .container{
+        display: none;
     }
 }

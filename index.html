@@ -12,8 +12,10 @@
     <div class="main">
       <div class="top-row">
         <p class="interior">this interior</p>
-        <div class="menu-button">
-          <img src="menu.png" id="menu-img" onclick="myFunction()">
+        <div class="menu-button" onclick="myFunction(this)">
+          <div class="top"></div>
+          <div class="middle"></div>
+          <div class="bottom"></div>
         </div>
         <ul class="menu">
           <li><a href="#HOME">home</a></li>
@@ -48,18 +50,19 @@
     </div>
     <footer class="footer">created by PG28 - devChallenges.io</footer>
     <script>
-      function myFunction(){
-        var menuButton = document.getElementById("menu-img");
-        
-        if(menuButton = "menu.png"){
-          document.getElementById("menu-img").src = "close.png";
+      function myFunction(x){
+        x.classList.toggle("change");
+        if(a==1)
+        {
+          document.classList("menu").style.display="flex";
+          return a=0;
         }
-        else if(menuButton = "close.png"){
-          document.getElementById("menu-img").src = "menu.png";
+        else
+        {
+          document.classList("menu").style.display="none";
+          return a=1;
         }
       }
-
-
     </script>
   </body>
 </html>
