@@ -11,18 +11,18 @@
   <body>
     <div class="main">
       <div class="top-row">
-        <p class="interior">this interior</p>
-        <div class="menu-button" onclick="myFunction(this)">
-          <div class="top"></div>
-          <div class="middle"></div>
-          <div class="bottom"></div>
-        </div>
+        <p class="interior" id="interior">this interior</p>
         <ul class="menu" id="test">
           <li><a href="#HOME">home</a></li>
           <li><a href="#COLLECTION">collection</a></li>
           <li><a href="#ABOUT"> about</a></li>
           <li><a href="#CONTACT">contact</a></li>
         </ul>
+        <div class="menu-button" onclick="myFunction(this)">
+          <div class="top"></div>
+          <div class="middle"></div>
+          <div class="bottom"></div>
+        </div>
       </div>
       <div class="container" id="container">
         <div class="text">
@@ -54,9 +54,11 @@
 
         x.classList.toggle("change");
         var active = document.getElementById("test");
+        var d = document.getElementById("interior");
         var c = document.getElementById("container");
         c.classList.toggle("noinfo");
         active.classList.toggle("active");
+        d.classList.toggle("noInterior");
         
       }
     </script>

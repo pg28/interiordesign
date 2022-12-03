@@ -6,13 +6,13 @@ body{
 
 /* Contains entire display except footer */
 .main{
-
+    
 }
 
 .top-row{
     padding-left: 77px;
     display: flex;
-    gap: 300px;
+    gap: 550px;
     align-items: flex-end;
 }
 
@@ -150,6 +150,10 @@ body{
     text-align: center;
 }
 
+.top .middle .bottom{
+    display: none;
+}
+
 
 
 
@@ -161,28 +165,39 @@ body{
         margin-left: 12px;
     }
 
+    /* Default no menu */
     .menu{
         display: none;
     }
 
+    /* Menu open */
     .active{
         display: flex;
         align-items: center;
         flex-direction: column;
         
     }
+
+    .top-row{
+        /* gap: 50px; */
+    }
+
+   /* Spacing for menu items */
     .menu li{
         padding-bottom: 32px;
     }
-
+    .menu-button{
+        display: block;
+        /* right: 200px; */
+    }
     /* Menu button  */
     .top, .middle, .bottom{
-        display: inline-block;
         width: 35px;
         height: 3px;
-        background-color: black;
-        margin: 0px, 0;
+        background-color: white;
+        margin-bottom: 15px;
         transition: 0.4s;
+        
     }
 
    /* Menu button X */
@@ -198,6 +213,9 @@ body{
 
     /* Displays no info showing only menu */
     .noinfo{
+        display: none;
+    }
+    .noInterior{
         display: none;
     }
 
@@ -229,6 +247,11 @@ body{
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         height: 138px;
         width: 300px;
+    }
+    .interior{
+        width: 115px;
+        height: 31px;
+        font-size: 14px;
     }
 
 }
